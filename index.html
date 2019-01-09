@@ -91,6 +91,39 @@
 	      </ul>
       </div>
     </div>
+	  
+	
+   <div class="panel panel-default">
+      <div class="panel-heading"><b>What is an interace?</b></div>
+        <div class="panel-body">
+		<p>An interface is an Type in OOP, used to enforce certain behavior for Classes. For example, we may have different Classes like Manager, Lead and Trainee. Every class should have a Joining Date property. We can add Joining Date as a Property in an Interface. When a Class inherits this Interface, the Class must have a property called "JoiningDate".</p>
+		<p>C#</p>
+		<pre>
+			interface IEmployee
+			{
+				DateTime JoiningDate {get; set;}
+			}
+			
+			public class Manager : IEmployee
+			{
+				DateTime JoiningDate {get; set;}
+			}
+			
+			public class Lead : IEmployee
+			{
+				DateTime JoiningDate {get; set;}
+			}
+			
+			public class Trainee : IEmployee
+			{
+				DateTime JoiningDate {get; set;}
+			}
+			
+			
+		</pre>
+      </div>
+    </div>
+
   
 
 	
