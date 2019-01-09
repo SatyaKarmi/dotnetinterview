@@ -49,10 +49,35 @@
   <div class="panel panel-default">
     <div class="panel-heading"><b>What is a Class?</b></div>
       <div class="panel-body">
-	      <p>A Class is a template for a Set of objects having common properties.</p>
+	      <p>A Class is a template for a Set of objects having common properties. For example, Customer is a Class. All Customers have certain set of properties like ID, Name, Type, all have business dealing etc.</p>
      </div>
     </div>
   </div>
+	
+  <div class="panel panel-default">
+    <div class="panel-heading"><b>What is a Object?</b></div>
+      <div class="panel-body">
+	      <p>Every instance of a Class is an Object. For example, if there is a Customer class, then, we can instantiate the Customer class and create an object.</p>
+	      <p>C#</p>
+	      <pre>
+	      
+	      // Customer class
+	      public class Customer
+	      {
+	      	public double ID {get; set;}
+		public string Name {get; set;}
+		
+	      }
+	      
+	      // Instantiating Customer to create an object
+	      Customer cust = new Customer();
+	      cust.ID = 1;
+	      cust.Name = "Robert Curie";
+	      
+	  </div>
+    </div>
+  </div>
+
 	
 	
 </div>
