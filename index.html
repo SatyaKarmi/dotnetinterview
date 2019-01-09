@@ -99,21 +99,25 @@
 		<p>An interface is an Type in OOP, used to enforce certain behavior for Classes. For example, we may have different Classes like Manager, Lead and Trainee. Every class should have a Joining Date property. We can add Joining Date as a Property in an Interface. When a Class inherits this Interface, the Class must have a property called "JoiningDate".</p>
 		<p>C#</p>
 		<pre>
+			// IEmployee interface
 			interface IEmployee
 			{
 				DateTime JoiningDate {get; set;}
 			}
 			
+			// Manager class
 			public class Manager : IEmployee
 			{
 				DateTime JoiningDate {get; set;}
 			}
 			
+			// Lead class
 			public class Lead : IEmployee
 			{
 				DateTime JoiningDate {get; set;}
 			}
 			
+			// Trainee class
 			public class Trainee : IEmployee
 			{
 				DateTime JoiningDate {get; set;}
@@ -121,6 +125,9 @@
 			
 			
 		</pre>
+		
+		<p>What will happen, if Manager class does not have JoiningDate property? In this scenario, .net framework will throw an error, pointing out that Manager class must implement JoiningDate property.</p>
+		
       </div>
     </div>
 
